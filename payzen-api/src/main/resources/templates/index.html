@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Verify Your Email - PayZen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 20px; background-color: #f8f9fa; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+<div style="max-width: 550px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(3, 4, 94, 0.1);">
+
+    <!-- Header Section -->
+    <div style="background: linear-gradient(135deg, #03045e 0%, #0077b6 100%); padding: 30px 24px; text-align: center;">
+        <img src="../images/payzen-logo.png" alt="PayZen Logo" style="width: 120px; height: auto; margin-bottom: 16px; filter: brightness(0) invert(1);">
+        <h1 style="font-size: 28px; font-weight: 700; margin: 0; color: #ffffff; letter-spacing: -0.5px;">
+            Verify Your Email
+        </h1>
+        <p style="font-size: 14px; color: #90e0ef; margin: 6px 0 0 0; font-weight: 500;">
+            Welcome to PayZen
+        </p>
+    </div>
+
+    <!-- Content Section -->
+    <div style="padding: 32px 24px;">
+        <div style="text-align: center; margin-bottom: 24px;">
+            <h2 style="font-size: 22px; font-weight: 600; margin: 0 0 12px 0; color: #03045e;">
+                Complete Your Registration
+            </h2>
+            <p style="font-size: 15px; color: #0077b6; margin: 0; line-height: 1.5;">
+                Enter the verification code below to activate your <span style="font-weight: 600; color: #03045e;">Pay</span><span style="font-weight: 600; color: #0077b6;">Zen</span> account
+            </p>
+        </div>
+
+        <!-- Verification Code -->
+        <div style="text-align: center; margin: 24px 0;">
+            <div style="display: inline-block; background: #caf0f8; padding: 20px 28px; border-radius: 8px; border: 2px solid #00b4d8;">
+                <p style="font-size: 12px; font-weight: 500; color: #0077b6; margin: 0 0 6px 0; text-transform: uppercase; letter-spacing: 1px;">
+                    Verification Code
+                </p>
+                <div style="font-size: 32px; font-weight: 700; color: #03045e; letter-spacing: 3px; font-family: 'Courier New', monospace;">
+                    <span th:text="${otp}">338343</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Security Info -->
+        <div style="background: #f0f9ff; padding: 16px; border-radius: 8px; border-left: 3px solid #0077b6; margin: 24px 0;">
+            <p style="font-size: 13px; font-weight: 600; color: #03045e; margin: 0 0 6px 0;">
+                🔒 Important Security Information
+            </p>
+            <p style="font-size: 13px; color: #0077b6; margin: 0; line-height: 1.4;">
+                • This code expires in <strong>5 minutes</strong><br>
+                • Never share this code with anyone<br>
+                • If you didn't request this, please ignore this email
+            </p>
+        </div>
+
+        <!-- Footer Text -->
+        <div style="text-align: center; margin-top: 24px;">
+            <p style="font-size: 13px; color: #0077b6; margin: 0; line-height: 1.5;">
+                You received this email because you requested a verification code for your
+                <span style="font-weight: 600; color: #03045e;">Pay</span><span style="font-weight: 600; color: #0077b6;">Zen</span> account.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background: #03045e; padding: 16px 24px; text-align: center;">
+        <p style="font-size: 11px; color: #90e0ef; margin: 0; font-weight: 500;">
+            © 2025 PayZen. All rights reserved. | Secure • Reliable • Trusted
+        </p>
+    </div>
+</div>
+</body>
+</html>
