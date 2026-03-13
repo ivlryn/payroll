@@ -19,6 +19,6 @@ Tracking Empolyee attendance, manage staff payroll
     - RESTful endpoints with clear resources: /employees, /payslip 
     - Use DTOs to decouple API from internal entities
 
-- **Data Storage**: Postgrea
+- **Data Storage**: Postgres
 ## Documentation
 - Swagger UI
