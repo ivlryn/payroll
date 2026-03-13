@@ -20,3 +20,5 @@ Tracking Empolyee attendance, manage staff payroll
     - Use DTOs to decouple API from internal entities
 
 - **Data Storage**: Postgrea
+## Documentation
+- Swagger UI
