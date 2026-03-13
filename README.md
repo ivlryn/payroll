@@ -1,6 +1,6 @@
 # payroll
 
-Tracking Empolyee attendance, manage staff payroll
+Tracking Empolyee attendance, manage staff payroll using Clean Architecture principles for scalable, maintainable code
 
 
 ## Features
